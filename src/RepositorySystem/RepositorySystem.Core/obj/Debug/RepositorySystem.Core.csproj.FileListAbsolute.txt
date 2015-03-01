@@ -1,0 +1,11 @@
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\RepositorySystem.Core.dll
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\RepositorySystem.Core.pdb
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\FluentNHibernate.dll
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\NHibernate.dll
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\Iesi.Collections.dll
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\FluentNHibernate.xml
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\NHibernate.xml
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\obj\Debug\RepositorySystem.Core.dll
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\obj\Debug\RepositorySystem.Core.pdb
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\Antlr3.Runtime.dll
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.Core\bin\Debug\Remotion.Data.Linq.dll

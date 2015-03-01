@@ -1,0 +1,4 @@
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.UnitTests\bin\Debug\RepositorySystem.UnitTests.dll
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.UnitTests\bin\Debug\RepositorySystem.UnitTests.pdb
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.UnitTests\obj\Debug\RepositorySystem.UnitTests.dll
+D:\GitHub\RepositorySystem\src\RepositorySystem\RepositorySystem.UnitTests\obj\Debug\RepositorySystem.UnitTests.pdb

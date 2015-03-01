@@ -1,0 +1,66 @@
+﻿<Window x:Class="RepositorySystem.WinClient.Views.StockInManageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        Title="StockInManage" Height="600" Width="800">
+    <Window.Resources>
+        <System:Double x:Key="TextBlockWidth">60</System:Double>
+        <System:Double x:Key="TextBoxWidth">240</System:Double>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" Text="{Binding QueryCondition}"/>
+                <Button Name="Query" Content="查询" Grid.Column="1"/>
+                <Button Name="QueryCancel" Content="取消" Grid.Column="2"/>
+            </Grid>
+            <DataGrid Grid.Row="1" Name="ItemCollection" IsReadOnly="True" SelectionMode="Single"
+                      AutoGenerateColumns="False" CanUserAddRows="False" RowHeaderWidth="0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="型号" Binding="{Binding Model}"/>
+                    <DataGridTextColumn Header="名称" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="库存" Binding="{Binding Inventory}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="10,0,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="型号" Width="{DynamicResource TextBlockWidth}"/>
+                <TextBox Name="Item_Model" Width="{DynamicResource TextBoxWidth}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="名称" Width="{DynamicResource TextBlockWidth}"/>
+                <TextBox Name="Item_Name" Width="{DynamicResource TextBoxWidth}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="库存" Width="{DynamicResource TextBlockWidth}"/>
+                <TextBox Name="Item_Inventory" Width="{DynamicResource TextBoxWidth}"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+            <Button Name="Add" Content="添加"/>
+            <Button Name="Delete" Content="删除"/>
+        </StackPanel>
+    </Grid>
+</Window>
